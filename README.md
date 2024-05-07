@@ -12,7 +12,7 @@ files from your computer.
 - Free, Open Source without ads
 - Multiplatform - works on Linux, Windows, macOS, FreeBSD and many more
 - Cache support - second and further scans should be much faster than the first one
-- CLI frontend - for easy automation
+- CLI frontend - for easy automationd
 - GUI frontend - uses GTK 4 or Slint frameworks
 - No spying - Czkawka does not have access to the Internet, nor does it collect any user information or statistics
 - Multilingual - support multiple languages like Polish, English or Italian
