@@ -411,7 +411,7 @@ fn popover_custom_select_unselect(
                             if model.get::<bool>(&iter, column_header) {
                                 if select_things {
                                     if check_all_selected && (number_of_all_things - number_of_already_selected_things == vec_of_iters.len()) {
-                                        vec_of_iters.pop();
+                                        vec_of_iters.remove(0);
                                     }
                                     for iter in vec_of_iters {
                                         model.set_value(&iter, column_button_selection, &true.to_value());
@@ -486,7 +486,7 @@ fn popover_custom_select_unselect(
                         if !model.iter_next(&iter) {
                             if select_things {
                                 if check_all_selected && (number_of_all_things - number_of_already_selected_things == vec_of_iters.len()) {
-                                    vec_of_iters.pop();
+                                    vec_of_iters.remove(0);
                                 }
                                 for iter in vec_of_iters {
                                     model.set_value(&iter, column_button_selection, &true.to_value());
